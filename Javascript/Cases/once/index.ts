@@ -5,6 +5,6 @@ export const once = <FNType extends (...args: any[]) => any>(fn: FNType) => {
     }) as FNType
 
     return (...args: any) => {
-        doFn(args)
+        doFn(...args)
     }
 }
